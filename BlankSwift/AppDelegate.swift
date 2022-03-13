@@ -10,15 +10,15 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
+    var window: UIWindow?
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    let mainWindow = UIWindow(frame: UIScreen.main.bounds)
-    let viewController = ViewController(nibName: nil, bundle: nil)
-    let navController = UINavigationController(rootViewController: viewController)
-    mainWindow.rootViewController = navController
-    mainWindow.makeKeyAndVisible()
-    window = mainWindow
-    return true
-  }
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let mainWindow = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = ViewController(nibName: nil, bundle: nil)
+        let navController = UINavigationController(rootViewController: viewController)
+        mainWindow.rootViewController = navController
+        mainWindow.makeKeyAndVisible()
+        window = mainWindow
+        return true
+    }
 }
